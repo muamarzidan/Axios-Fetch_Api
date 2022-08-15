@@ -1,6 +1,7 @@
 var link = "https://reqres.in/api/users";
 
 // this code to compare how usefull axios than fetch
+// but this style is usefull, but you can relate when you use fetch and when you use axios
 
 
 //when get
@@ -9,8 +10,7 @@ fetch(link+'/1')
         console.log(data.data);
     }).catch((error) => {
         console.log('error : ' + error);
-        }
-    );
+    });
 
 axios.get(link+'/1')
     .then((data) => console.log(data.data))
